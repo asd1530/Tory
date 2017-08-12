@@ -24,10 +24,6 @@ namespace DAL
     {
         Task SeedAsync();
     }
-
-
-
-
     public class DatabaseInitializer : IDatabaseInitializer
     {
         private readonly ApplicationDbContext _context;
@@ -53,8 +49,8 @@ namespace DAL
                 await ensureRoleAsync(adminRoleName, "Default administrator", ApplicationPermissions.GetAllPermissionValues());
                 await ensureRoleAsync(userRoleName, "Default user", new string[] { });
 
-                await createUserAsync("admin", "tempP@ss123", "Inbuilt Administrator", "admin@ebenmonney.com", "+1 (123) 000-0000", new string[] { adminRoleName });
-                await createUserAsync("user", "tempP@ss123", "Inbuilt Standard User", "user@ebenmonney.com", "+1 (123) 000-0001", new string[] { userRoleName });
+                await createUserAsync("admin", "admini123", "Inbuilt Administrator", "admin", "+1 (123) 000-0000", new string[] { adminRoleName });
+                await createUserAsync("user", "user123", "Inbuilt Standard User", "user", "+1 (123) 000-0001", new string[] { userRoleName });
             }
 
 

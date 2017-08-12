@@ -92,11 +92,11 @@ namespace Tory
                 options.User.RequireUniqueEmail = true;
 
                 //    //// Password settings
-                //    //options.Password.RequireDigit = true;
-                //    //options.Password.RequiredLength = 8;
-                //    //options.Password.RequireNonAlphanumeric = false;
-                //    //options.Password.RequireUppercase = true;
-                //    //options.Password.RequireLowercase = false;
+                      options.Password.RequireDigit = false;
+                      options.Password.RequiredLength = 4;
+                      options.Password.RequireNonAlphanumeric = false;
+                        options.Password.RequireUppercase = false;
+                options.Password.RequireLowercase = false;
 
                 //    //// Lockout settings
                 //    //options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
