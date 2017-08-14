@@ -8,7 +8,7 @@
     "Appointments": "Appointments",
     "Customers": "Customers",
     "Products": "Products",
-    "Orders": "Orders",
+    "City": "City",
     "About": "About",
     "Logout": "Logout"
   },
@@ -16,7 +16,7 @@
     "Dashboard": "Dashboard",
     "Customers": "Customers",
     "Products": "Products",
-    "Orders": "Orders",
+    "City": "City",
     "NotFound": "Not-Found",
     "About": "About",
     "Settings": "Settings"
@@ -59,7 +59,7 @@
     "Dashboard": "Dashboard",
     "Customers": "Customers",
     "Products": "Products",
-    "Orders": "Orders",
+    "City": "City",
     "About": "About",
     "Settings": "Settings",
     "HomePageHint": "Select the default page to navigate to on login",

@@ -1,0 +1,19 @@
+﻿<div>
+
+    <a class="btn btn-primary btn-primary" (click)="parkModal.show()"><span class="glyphicon glyphicon-tree-deciduous"></span> Park</a>
+    <div class="modal fade" bsModal #parkModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title pull-left"><i class="fa fa-user-circle-o"></i> Title</h4>
+                    <button type="button" class="close pull-right" title="Close" (click)="parkModal.hide()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    something
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

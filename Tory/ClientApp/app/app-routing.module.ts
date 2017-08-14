@@ -13,7 +13,7 @@ import { LoginComponent } from "./components/login/login.component";
 import { HomeComponent } from "./components/home/home.component";
 import { CustomersComponent } from "./components/customers/customers.component";
 import { ProductsComponent } from "./components/products/products.component";
-import { OrdersComponent } from "./components/orders/orders.component";
+import { CityComponent } from "./components/city/city.component";
 import { SettingsComponent } from "./components/settings/settings.component";
 import { AboutComponent } from "./components/about/about.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
@@ -29,7 +29,7 @@ import { AuthGuard } from './services/auth-guard.service';
             { path: "login", component: LoginComponent, data: { title: "Login" } },
             { path: "customers", component: CustomersComponent, canActivate: [AuthGuard], data: { title: "Customers" } },
             { path: "products", component: ProductsComponent, canActivate: [AuthGuard], data: { title: "Products" } },
-            { path: "orders", component: OrdersComponent, canActivate: [AuthGuard], data: { title: "Orders" } },
+            { path: "city", component: CityComponent, canActivate: [AuthGuard], data: { title: "City" } },
             { path: "settings", component: SettingsComponent, canActivate: [AuthGuard], data: { title: "Settings" } },
             { path: "about", component: AboutComponent, data: { title: "About Us" } },
             { path: "home", redirectTo: "/", pathMatch: "full" },
